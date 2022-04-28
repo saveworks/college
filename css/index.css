@@ -1,0 +1,137 @@
+/******************* 通用的样式 ******************/
+
+
+body{
+
+font-size: 13px;
+font-family: 'Courier New', Courier, monospace;
+color: #000;
+}
+
+
+.btn-register {
+    color: #FFFFFF;
+    background-color: #0AB4F7;
+    border-color: #0AB4F7;
+  }
+
+  .btn-register:hover,
+  .btn-register:focus,
+  .btn-register:active,
+  .btn-register.active,
+  .open .dropdown-toggle.btn-register {
+    color: #FFFFFF;
+    background-color: #086DF2;
+    border-color: #0AB4F7;
+  }
+
+  .btn-register:active,
+  .btn-register.active,
+  .open .dropdown-toggle.btn-register {
+    background-image: none;
+  }
+
+  .btn-register.disabled,
+  .btn-register[disabled],
+  fieldset[disabled] .btn-register,
+  .btn-register.disabled:hover,
+  .btn-register[disabled]:hover,
+  fieldset[disabled] .btn-register:hover,
+  .btn-register.disabled:focus,
+  .btn-register[disabled]:focus,
+  fieldset[disabled] .btn-register:focus,
+  .btn-register.disabled:active,
+  .btn-register[disabled]:active,
+  fieldset[disabled] .btn-register:active,
+  .btn-register.disabled.active,
+  .btn-register[disabled].active,
+  fieldset[disabled] .btn-register.active {
+    background-color: #0AB4F7;
+    border-color: #0AB4F7;
+  }
+
+  .btn-register .badge {
+    color: #0AB4F7;
+    background-color: #FFFFFF;
+  }
+
+@font-face {
+    font-family: lk;
+    src: url("../fonts/lk.eot") format('embedded-opentype'),
+    url("../fonts/lk.svg") format('svg'),
+    url("../fonts/lk.ttf") format('truetype'),
+    url("../fonts/lk.woff") format('woff');
+}
+
+[class^="icon-"],
+[class*="icon-"]{
+    font-family: lk;
+    font-style: normal;
+
+}
+
+/******************* 通用的样式 ******************/
+
+/******************* 头部的样式 ******************/
+#lk_header{
+
+}
+
+#lk_header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#lk_header .top-bar .container .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+
+#lk_header .top-bar .container .row .top-bar-1 a{
+
+        position: relative
+
+}
+
+#lk_header .top-bar .container .row .top-bar-1 a img{
+    display: none;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -10px;
+
+}
+
+#lk_header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
+
+/*
+#lk_header .top-bar .top-bar-1{
+    background-color: red;
+
+}
+#lk_header .top-bar .top-bar-2{
+    background-color: green;
+
+}
+#lk_header .top-bar .top-bar-3{
+    background-color: blue;
+
+}
+#lk_header .top-bar .top-bar-4{
+    background-color: orange;
+
+} */
+
+
+.icon-phone::before{
+    content: "\e958";
+    font-size: 13px;
+}
+
+.icon-tel::before{
+    content: "\e942";
+    font-size: 13px;
+}
