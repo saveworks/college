@@ -47,7 +47,8 @@
           </div>
           <div class="top-bar-4 col-md-3">
             <a class="btn btn-default btn-sm btn-register" href="#" role="button">免费注册</a>
-            <a href="#" role="button" class="text-muted" style="margin-left: 10px;">立即登录</a>
+            <a href="#" role="button" class="text-muted" style="margin-left: 10px;" data-toggle="modal"
+              data-target="#lk_login">立即登录</a>
           </div>
         </div>
       </div>
@@ -463,8 +464,72 @@
   <!-- /友情链接 -->
 
   <!-- 尾部 -->
-  <footer id="lk_footer">尾部</footer>
+  <footer id="lk_footer">
+    <div class="container">
+      <div class="row" style="padding-top: 20px;">
+        <div class="col-md-3 one col-md-offset-1">
+          <div class="row">
+
+            <ul class="col-md-6">
+              <li><a href="">关于我们</a></li>
+              <li><a href="">课程介绍</a></li>
+              <li><a href="">热门课程</a></li>
+
+            </ul>
+
+            <ul class="col-md-6">
+              <li><a href="">名师授课</a></li>
+              <li><a href="">课堂互动</a></li>
+              <li><a href="">联系我们</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 two">
+          <h5>公司地址: 上海市松江区松江大学城</h5>
+          <h5>联系电话: 六个六</h5>
+          <h5>地址邮箱: admin@it666.com</h5>
+        </div>
+
+        <div class="col-md-3 three">
+          <h5>联系我们:</h5>
+          <a href="">
+            <img src="imgs/weixin-h.png" alt="" width="50" data-toggle="tooltip" data-placement="bottom" title=""
+              data-original-title="关注微博">
+            <img src="imgs/xinlang-h.png" alt="" width="50" data-toggle="tooltip" data-placement="bottom" title=""
+              data-original-title="关注微博">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
   <!-- /尾部 -->
+  <!-- 登录 -->
+  <div class="modal fade" id="lk_login" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">login</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="请输入手机号码">
+          <input type="password" placeholder="请输入密码">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">login</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
 
   <!-- 你的HTML结构 -->
   <!-- 以下代码如果不使用JS插件则不需要 -->

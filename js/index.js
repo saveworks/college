@@ -35,4 +35,9 @@ $(function(){
         });
     });
     $(window).trigger("resize");
+
+    //tools tips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
 });
