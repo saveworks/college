@@ -53,7 +53,7 @@ $(function(){
         totalW +=$(item).width();
         //console.log(totalW);
 
-        let parentW = $ul.parentW().width();
+        let parentW = $ul.parent().width();
 
         //set width
         if(totalW > parentW){
@@ -61,7 +61,7 @@ $(function(){
             width: totalW +"px"
         })
     }else{
-        $ul.removeAttribute("style")
+        $ul.removeAttr("style")
     }
 
 
@@ -69,4 +69,28 @@ $(function(){
       });
 
 
+
+      //导航
+
+      let allLis = $("#lk_nav li");
+
+      $(allLis[0]).on("click", function(){
+        $("html,body").animate({scrollTop: $("#lk_about").offset().top}, 1000);
+
+      })
+
+      $(allLis[1]).on("click", function(){
+        $("html,body").animate({scrollTop: $("#lk_product").offset().top}, 1000);
+
+      })
+
+      $(allLis[2]).on("click", function(){
+        $("html,body").animate({scrollTop: $("#lk_hot").offset().top}, 1000);
+
+      })
+
+      $(allLis[5]).on("click", function(){
+        $("html,body").animate({scrollTop: $("#lk_footer").offset().top}, 1000);
+
+      });
 });
