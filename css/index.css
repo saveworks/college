@@ -314,5 +314,19 @@ margin: 15px 0 ;
 } */
 
 /******************* 热门课程样式 ******************/
+/******************* 友情链接样式 ******************/
+
+#lk_link .logos{
+    list-style: none;
+    text-align: center;
+}
+
+#lk_link .logos li{
+display: inline-block;
+padding: 20px 30px;
+}
+
+
+/******************* 友情链接样式 ******************/
 
 
