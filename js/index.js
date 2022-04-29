@@ -40,4 +40,33 @@ $(function(){
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+
+      // width
+      $(window).on("resize", function(){
+        let $ul = $("#lk_product .nav");
+        let $allLis =$("[role='presentation']", $ul);
+        //console.log($allLis);
+
+         //each
+      let totalW =0;
+      $allLis.each(function(index, item){
+        totalW +=$(item).width();
+        //console.log(totalW);
+
+        let parentW = $ul.parentW().width();
+
+        //set width
+        if(totalW > parentW){
+        $ul.css({
+            width: totalW +"px"
+        })
+    }else{
+        $ul.removeAttribute("style")
+    }
+
+
+      });
+      });
+
+
 });
